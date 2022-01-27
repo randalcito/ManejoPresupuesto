@@ -26,6 +26,7 @@ namespace ManejoPresupuesto
         {
             services.AddControllersWithViews();
             services.AddTransient<IRepositorioTiposCuentas, RepositorioTiposCuentas>();
+            services.AddTransient<IServicioUsuarios, ServicioUsuarios>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
